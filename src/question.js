@@ -8,7 +8,7 @@ class Question extends Component {
   }
   //fetches random Jeopardy questions
   componentDidMount() {
-    fetch('http://jservice.io/api/random')
+    fetch('https://jservice.io/api/random')
       .then(questions => questions.json())
       .then(questions => {
         this.setState({questions})
